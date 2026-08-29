@@ -13,10 +13,10 @@
 
 verify.codeFix({
     description: "Infer parameter types from usage",
-    index: 2,
+    index: 0,
     newFileContent:
 `/**
- * @param {(arg0: any) => void} callback
+ * @param {(arg0: any) => any} callback
  */
 function coll(callback /*, name1, name2, ... */) {
     return callback(this);
